@@ -97,7 +97,7 @@ class CustomBpmnJsModeler extends Modeler {
         const [{ xml }, { svg }] = await Promise.all([
             this.saveXML({
                 format: true,
-                preamble: false
+                preamble: true
             }),
             this.saveSVG()
         ]);
